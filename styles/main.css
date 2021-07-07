@@ -1,0 +1,81 @@
+        .logo{
+			background: #43b1d2;
+			float: left;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		.phone{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			background: #43b1d2;
+			margin-right: 15px;
+			margin-top: 0px;
+		}
+		.menu{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			background: #43b1d2;
+			margin-right: 15px;
+			margin-top: 25px;
+		}
+		.menu{
+			flex-grow: 1;
+		}
+		.menu ul{
+			display: flex;
+			flex-flow: row nowrap;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			
+		}
+		.menu li{
+			margin-right: 20px;
+
+			
+		}
+		.menu li:last-child{
+			margin-right: 0px;
+
+		}
+		.after::after {
+			content: "";
+		}
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		.button {
+			position: fixed;
+			bottom: 10px;
+			left: 10px;
+		}
+		.clearfix::after {
+			display: block;
+			width: 100%;
+			content: "";
+			clear: both;
+
+		}
+		.lorem{
+			font-size: 150%;
+			text-align: justify;
+			color: blue;
+			font-family: roboto, lato, sans-serif;
+		}
+		a {
+			color: black;
+			font-family: helvetica;
+			text-decoration: none;
+		}
+		a:hover {
+			color:white;
+		}
+		.phone_link {
+			color: white;
+			font-family: helvetica;
+			text-decoration: none;
+		}
