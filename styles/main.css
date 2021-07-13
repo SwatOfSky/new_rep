@@ -1,5 +1,4 @@
         .logo{
-			background: #43b1d2;
 			float: left;
 			margin-left: 10px;
 			margin-top: 10px;
@@ -8,20 +7,18 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
-			background: #43b1d2;
 			margin-right: 15px;
 			margin-top: 0px;
+			font-size: 150%;
 		}
 		.menu{
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
-			background: #43b1d2;
 			margin-right: 15px;
 			margin-top: 25px;
-		}
-		.menu{
 			flex-grow: 1;
+			font-size: 110%;
 		}
 		.menu ul{
 			display: flex;
@@ -50,7 +47,7 @@
 		}
 		.button {
 			position: fixed;
-			bottom: 10px;
+			bottom: 50px;
 			left: 10px;
 		}
 		.clearfix::after {
@@ -79,3 +76,74 @@
 			font-family: helvetica;
 			text-decoration: none;
 		}
+
+		.banner{
+			background-image: url(../images/banner.png);
+			background-repeat: no-repeat;
+			max-width: 1000px;
+			margin: auto;
+			box-sizing: content-box;
+			display: flex;
+			flex-direction: column;
+			padding-top: 20%;
+			padding-bottom: 8%;
+
+		}
+		.banner_background {
+			background-color: #cbd4e6;
+			max-width: 2000px;
+		}
+		.banner_info, .banner_number, .banner_input {
+			text-align: right;
+		}
+		.clearfix {
+			background: #43b1d2;
+		}
+		.container, .tabs {
+			max-width: 1000px;
+			margin: auto;
+		}
+		.advantages{
+			display: flex;
+			flex-direction: row;
+			max-width: 1000px;
+			margin: auto;
+		}
+		.treatment, .emergency, .medical, .qualified{
+			width: 25%;
+			text-align: center;
+		}
+		.treatment{
+			background-color: #43b1d2;
+		}
+		.emergency{
+			background-color: #3fb6c6;
+		}
+		.medical{
+			background-color: #3cbbbb;
+		}
+		.qualified{
+			background-color: #37c3a8;
+		}
+		.tabs{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+		}
+		.mrt {
+			padding: 10px;
+			border-top: 1px solid;
+			border-left: 1px solid;
+			border-right: 1px solid;
+			border-bottom: none;
+		}
+		.kt {
+			padding: 10px;
+			border-bottom: 1px solid;
+		}
+		.di {
+			padding: 10px;
+			border-bottom: 1px solid;
+			flex-grow:2;
+		}
+		
