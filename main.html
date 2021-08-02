@@ -8,6 +8,8 @@
 	<meta name="viewport" content="width=device-width">
 </head>
 <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 	<header class="header">
 		<div class="container header__logo">
 		<div class="logo">
@@ -17,6 +19,9 @@
 		</div>
 		
 		<div class="header__nav">
+		<div class="header__burger">
+			<span></span>
+		</div>
 		<div class="phone phone__icon">
 			<div class="icon"></div>
 			<a class="phone_link" href="/"><b>&nbsp80300&nbsp5000</b></a>
@@ -78,6 +83,7 @@
 			<p>Lorem ipsum dolor sit amet
 				Suspendisse pharetra varius lacus, rhoncus sodales dui volutpat eu. 
 			</p>
+		</div>
 	</section>
 
 	<section class="tabs">
@@ -87,8 +93,8 @@
 	</section>
 	
 	<table class="container" border="1" align="center" cellpadding="4" cellspacing="0">
-	<tr>
-	<td>	
+	<tr class="table__tr">
+	<td class="table__td">	
 	<section class="container clinics__box">
 		<div class="clinic__top">
 		<div class="clinic_logo">
@@ -113,7 +119,7 @@
 	</div>
 	</section>
     </td>
-    <td>
+    <td class="table__td">
 	<section class="container clinics__box">
 		<div class="clinic__top">
 		<div class="clinic_logo">
@@ -139,8 +145,8 @@
 	</section>
 	</td>
     </tr>
-    <tr>
-	<td>	
+    <tr class="table__tr">
+	<td class="table__td">	
 	<section class="container clinics__box">
 		<div class="clinic__top">
 		<div class="clinic_logo">
@@ -165,7 +171,7 @@
 	</div>
 	</section>
     </td>
-    <td>
+    <td class="table__td">
 	<section class="container clinics__box">
 		<div class="clinic__top">
 		<div class="clinic_logo">
@@ -191,8 +197,8 @@
 	</section>
 	</td>
     </tr>
-    <tr>
-	<td>	
+    <tr class="table__tr">
+	<td class="table__td">	
 	<section class="container clinics__box">
 		<div class="clinic__top">
 		<div class="clinic_logo">
@@ -217,7 +223,7 @@
 	</div>
 	</section>
     </td>
-    <td>
+    <td class="table__td">
 	<section class="container clinics__box">
 		<div class="clinic__top">
 		<div class="clinic_logo">
@@ -244,8 +250,126 @@
 	</td>
     </tr>
 </table>
-		<div class="all_clinics"><button class="all_clinics__button">Все кабинеты</button><div>
+		<div class="all_clinics"><button class="all_clinics__button">Все кабинеты</button></div>
 
+	<section class="sliders__background">
+		<div class=" container clinic__top">
+		<div>
+			<h4 class="padding15">Последние статьи</h4>
+		<div class="clinic__top">
+			<div class="sliders"><a href="/"><img src="img/sliders.png"></a></div>
+			<span class="padding15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+		</div>
+		<div class="clinic__top">
+			<div class="padding15">
+			<svg class="arrow__box"><use xlink:href="#arrow-left"></use></svg>
+			<svg class="arrow__box"><use xlink:href="#arrow-right"></use></svg>
+			</div>
+			<div class="padding15">
+			<button class="order_call">Читать подробнее</button>
+			</div>
+		</div>
+	    </div>
+	    <div>
+	    	<h4 class="padding15">Отзывы о нас</h4>
+	    	<div class="sliders__space">
+	    	<span class="padding15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+	    	<div class="padding15 arrow__end">
+			<svg class="arrow__box"><use xlink:href="#arrow-left"></use></svg>
+			<svg class="arrow__box"><use xlink:href="#arrow-right"></use></svg>
+			</div>
+			</div>
+	    </div>
+	    </div>
+	</section>
+
+	<section class="call__background"> 
+		<div class="clinic__top container">
+		<div class="logo">
+			<a href="/">
+				<img src="img/logo.png">
+			</a>
+		</div>
+		<div class="call__row">
+			<strong class="phone_link">Заказать звонок:</strong><input type="input" name="q" placeholder="+380"> 
+    	<button class="call__button">Отправить</button>
+		</div>
+		</div>
+	</section>
+
+	<div class="sliders__background">
+	<footer class="sliders__background all_clinics container">
+		<table>
+		<tr class="table__tr">
+		<td class="table__td">
+		<section class="container">
+		<h4>Get in touch</h4>
+		<div class="padding15">
+			<svg class="footer__icon"><use xlink:href="#mail_icon"></use></svg>
+			free@psdfreebies.com<br>
+			free@psdfreebies.com
+		</div>
+		<div class="padding15">
+			<svg class="footer__icon"><use xlink:href="#phone_icon"></use></svg>
+			+123 456 7890<br>
+			+123 456 7890
+		</div>
+		<div class="padding15">
+			<svg class="footer__icon"><use xlink:href="#map_icon"></use></svg>
+			123, Main Road, New City,<br>My Country 123456
+		</div>
+		<div>
+		</div>
+		</section>
+		</td>
+		<td class="table__td">
+		<section class="container sliders__space">
+			<h4>Quick Links</h4>
+			<div><a class="float" href="/"><button class="play_icon"></button></a>About us</div>
+			<div><a class="float" href="/"><button class="play_icon"></button></a>Blog</div>
+			<div><a class="float" href="/"><button class="play_icon"></button></a>Contact us</div>
+			<div><a class="float" href="/"><button class="play_icon"></button></a>FAQ</div>
+			<div><a class="float" href="/"><button class="play_icon"></button></a>Insurance</div>
+			<div><a class="float" href="/"><button class="play_icon"></button></a>Contact us</div>
+		</section>
+		</td>
+		<td class="table__td">
+		<section class="container sliders__space">
+			<h4>Our Services</h4>
+			<div><a class="float" href="/"><button class="play_icon"></button></a>Work Injures</div>
+			<div><a class="float" href="/"><button class="play_icon"></button></a>Sport Injures</div>
+			<div><a class="float" href="/"><button class="play_icon"></button></a>Cold Laser Therapy</div>
+			<div><a class="float" href="/"><button class="play_icon"></button></a>Massage Therapy</div>
+			<div><a class="float" href="/"><button class="play_icon"></button></a>Physiotherapy</div>
+			<div><a class="float" href="/"><button class="play_icon"></button></a>Chiropractic Therapy</div>
+		</section>
+		</td>
+		<td class="table__td">
+		<section class="container">
+			<h4>Enquiry Form</h4>
+			<input type="input" name="q" placeholder="Name"><br> 
+			<input type="input" name="q" placeholder="Phone"> <br>
+			<textarea name="comment" cols="20" wrap rows="5"></textarea><br>
+			<button class="footer__button">Submit</button>
+		</section>
+		</td>
+		</tr>
+	</table>
+	</footer>
+	</div>
+	<section class="call__background"> 
+		<div class="copyright container">Copyright 2017</div>
+	</section>
 
 	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; opacity: 0">
 	    <symbol id="best_treatment" viewBox="0 0 41 45" >
@@ -295,6 +419,88 @@
 <image id="Vector_Smart_Object4" data-name="Vector Smart Object4" width="40" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAmCAQAAAAc/RGWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQflBxgVIwAJlJULAAADQklEQVRIx7XWb2jVVRzH8dfPNtTNcmS6LebSBTkh8WIkZE8u2cKgqakR1BP777YHFig9CyFCgiJHkUFoywdBUSFoRQ/KJNAmJRMfhLHUyqFDzWvgJt1dTw/2u3f3v9eoz4Ef5/vnvDnnfA/n/KhVXwtxO5zvDkWtrmZgs5P2oVtrtbTagRz3IhZIVEuadgPAmhT5WHNNmfeY7goaZQzGvrS+8EsxMBh1rgZgq5vj3hUjca/TcStCujAx2Pav19cjeLWwyrUDp8XfprjNRuRLGSuqA++024ABm4uAg7bj+7yxn4m0OO9Xs6acpVVeolvK7Z4q8jdrxXwn9evX7wvr9DjnOR12VNvDtYaw0VAR8LQBnLY3tusdMW5xYLdgdbkZtkhKuju2ZklKWl5xT9OekPFRNN1mp+yKcodvaoafuCol5Ss8LCXlsqC9wgzhWcEbgftl7BcVF2VvSb2bBAuqAPnUNSsDrwk2lRalRUJCG+olJCxxPb3grD3RHNsc9WZ0V+GSd8b7+hOejPtXzas6Q1a65vNApzFH1OXfNj16sNY21DtW4VZZZqDIc96j0TNhV7TVO165kesLfvSgtSXey+7Au9Z4uRxwkSG3ulgWuEGHW6T97NqkI+RCIUSHdJUCv7NJhOEKRXgPvO/58ksoBaZ8WGXJ2YN+X3Eg2muB5kngRskadq9ZC7ab7TbjXi+Jv22+buvqcMrBGoBLjWHYhgrxuZo0TM7wYE034kZ/VY0/pEP7f/hIhadD0p7/4dWrQ2eZo1qqBu3l8qJ8o5NI+oYe++tpIrI49y4/oNcccMZbjlYduMxL2sBFO32T849OpfQJTui1yhYjMrqr4B6RMWKLVXqdEPTlv3qTajPukMbYmmfYuZxVrEZnDeeutQaHjGsvBm4VLMsbtE7wWAXgesH6rBFYKtha/EgtkirYtQNYVAHYGcezyGP+1Jm1ssAJM9QXLIt0BeDfcTxWdJOGqdws8LAZVucNepzCP9U8/RDHs1pjRmnuTH8YzV36XcYcKTyzeYoMGtMVWwmjzphZXBTudcmE/fp9K/hdh8pa6DfBAf32mXDJ8tJjM5n2gQuCETtyh6KS5tphRHDBgIX5f1//ADH4NfvgRnx1AAAAAElFTkSuQmCC"/>
  </symbol>
 </svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; opacity: 0">
+  <symbol id="arrow-left" viewBox="0 0 14 15">
+  	<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>                      
+</x:xmpmeta>
+<?xpacket end="w"?></metadata>
+<image id="arrow-left" width="14" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAQAAAB+HTb/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQflCAEJHgtO09HtAAAAjklEQVQY043QMQ4BURQF0COCRKGRiUah0SmtQWcF7EEjsSkVtdkAnU4UCh2VYqL7ipFPmBH3Nf/lvN/cqve0LdydFSSxF2SGZRQE83JKNf+iChKpAbiayaJtacVfn7NjVELBiZpVCW4qqFsag5tJrCA45I+69fP6qPtdQVMaufOLF0Xd5nzRV5iGqd5rfQAj5lN16XxF+QAAAABJRU5ErkJggg=="/>
+  </symbol>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; opacity: 0">
+  <symbol id="arrow-right" viewBox="0 0 14 15">
+  	<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+<?xpacket end="w"?></metadata>
+<image id="arrow-right" width="14" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAQAAAB+HTb/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQflCAEJHjWPssxGAAAAi0lEQVQY033PMQ7BABQG4K8SEh0siIHBwglIzAYnMDqGxOoKDuECNTPbGQ32mg2WWpqqpu3/tve9/Mnjl7GNltJMxBJROe8kkioeeNTxqMiBtqkg46MOOFn7cE6vixNp8qzAxKrhVf6Zu2tgaJ4tQge9lJbi/G3okhbe9P9raohtNTHzriJY2OvmF19m+ERpR0b9/AAAAABJRU5ErkJggg=="/>
+  </symbol>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; opacity: 0">
+ <symbol id="mail_icon" viewBox="0 0 40 31">
+ 	 <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>                         
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        opacity: 0.51;
+      }
+    </style>
+  </defs>
+  <image id="Icon" class="cls-1" width="40" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAfCAQAAAA/iEfzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQflCAEPLSOLgGCVAAABuUlEQVRIx+3WzStEYRTH8e99Bg0WKDUpzBKZmoWN1aST/AHUWFi4myH5A/wpopndIHsmpLNR8pK18bJUY5QiqTFvWQgzZu68L53dPed3Ppun5/ZYICNM46H5SnKsN5aMsMAL16Sa5NyM0cuWJat0sE5OM8150o6LFdIGD3GyrElQ2hrG2iTIGlnieAyQ0iyX+LClqyGuCxsfl5olBearqYfsMcSS9NfN9bPEEHt6+PVtvgd6QZRuQuKti/MSopuoXnx3zO9Q74iQwRZ/zZwfmwwRvfvtmcKAPrLBE3MyJVZVzJIp5nhiQx8L+6Y4pm9EuEWYFVdFzsUswi0RfSuemL9RTbPNOX4WpdOR62QRP+dsa/rvzJTGNa/7xPASkr6yXB8hvMR0X/OlU0PZ0jN26GFZhku4YZbpYUfPym86gKBxwuSwxVfE+bDJEda4054jCJpgk2eCEvjhAgR5ZlMTzlsV76++Sph5pmWAK2CCce7Z1Y9KO1V+CPohUWaYZBzIc8pRuYOoAwTNcyAnDAIP+l4tXQMIoO/c1JKDiofSWP2D/2CDoLtlmhsMSUalJaS4GSXZ+rdNq19fn5TAjNlrQSRCAAAAAElFTkSuQmCC"/>
+ </symbol>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; opacity: 0">
+ <symbol id="map_icon" viewBox="0 0 38 40">
+ 	 <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>                          
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        opacity: 0.51;
+      }
+    </style>
+  </defs>
+  <image id="Icon" class="cls-1" width="38" height="40" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAoCAQAAAA4PkBVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQflCAEPLi+pG399AAAEZUlEQVRIx6WWy09UdxTHP3eGt4gsRBAd5TdapBQDKlSNTFt/PmKTtkExtt01semiyy76b3TRhZuSNKZJa6U2ddGaND3YAlWirYziiyIXRUEEBHzwnGG6mDuXuY9Bm/4285t7vudzz++cM+c3BsssXUQdmygjH5hmmD6i8iyz3sgIymc/2wnymEGeYlBEiGJidNEm8/8Jpsv5kFVE6ZSHaU/X8wZVPOYbGXtpmF7HR8Q4Lf0+tiqaidMio15b0EdeyHEW+UqG/F5kjqledlCtus3YS8BUE+WclJGl7Kl1apWaSzmbz9Uwu8g1e194TF3Gp/wp5+wo36YGA4gT5ZzMWs+PUsMXMuX0DXgCq2eRDhv1Ca/xF99yimts42OdZ6nOE2CH2zXLA6vkjt1L77CSk1YZrutbvM9BzgLImH5AJbJsZLqAYu5a+5VU07VUUbnBVbbpHOvrXcp0cFkYRcCEtS8HbjmsNwlSau0nCbDiRTmDuPUZBJzlX0jziHm93bAFsN/3CFAOqyLBuLVfAcwsD5sgljqIjPGAPXqVnc8SdtJnF2ctz2TO6exKoZlQYULqopkMZIgGatWMeq7yVB3NJPjOnAHQ2bzLHfOG09vbGlGaeIVeABnWX3OEw5ZlhFZJHXIruUTdrl7YNQ4QwfqpyKD+kjBlJBhiQBLWgQ0aGecft6vP1NARDtAid8m4dDUf8KNccT/3a41LzLJ/GVSAfUxx1Wvxgcks7WzUVRlpdZQgEvcaHDnTZdSzQk5xgQYO6T6JeR10HgcYoRv0Maa5nD6J7dbQG9Ux9lPOuLohcfWUeuLmgBemDhKmVSZ0gK3U8rrarMbNKRdMNVNKO2fkspkA85EKUauum9OuuNbxHj3SCWbC7FFXmGMLa8wrjpzpbNYTlba0cXeWBIe1I6c6yGHm+cXO7pS0EWW9znYWYANZOA4lk/xKiIgzMNbws+vmHCCLDU6YIoH7Luqin706ZJMUjdySbpeqn0RqHKRgYUbENQMkwRlmOZoc1TqfZp7xk7sgMsMI4TSYzqUcnztSntBKMU3a0AZHWMlpee5VcYdynbsUWQUBTB8Z0sd5qonwJlsQGfDTMECACkg1rWIRfyH8Toh9QC9/ZFAMsIjidiqyMEPuQWfHtsj3jDNOa2pmeBRzDCWzFgCdT6lfxmzxLCc4kbp+fVc/pTo/GVkYwz9jNm5BFpazY2IQTsIqiHGP/7PuEaMiWYBN3E+9WRcSoYabdMhkZl9dTCOv0kN78tcgC/o+myBLF7I6Oeh0AXvYSQ7DNFCve2hf+ieUBiolQg0GD9nNDt1Fp0wDJnt1oaFraaaFUQvUy28yrFfTSC1BemlPH996IxEqiROlQ8b0WvZRyTxddFLCcX4wdBN1dLCLHPpok0HbsYjdNJDDIO3cBrYQIcQ8l7ggT2xViL1sZp6LNNJt6M8oBifIluaxk90UMAqUMM0FurwtYgFh0tCfM8p5ydgaOpvt7AE6+Ttzg2jFW6z+F1aMigVwvFdMAAAAAElFTkSuQmCC"/>
+ </symbol>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; opacity: 0">
+  <symbol id="phone_icon" viewBox="0 0 27 40">
+  	<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>                         
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        opacity: 0.51;
+      }
+    </style>
+  </defs>
+  <image id="Icon" class="cls-1" width="27" height="40" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAQAAAClM0ndAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQflCAEPLgF1zXKyAAAA2ElEQVRIx+3WPUoDQRQA4G/XLbKFnRhSh4Bup13KDB7AA3iDnMcbeAA7G5kcwSpLIJ2NbCcIbiwEi9hpYGe13Fc++Ob9NG8ywsyVia7x4jFuszBz402t7YRKlWN3WVgq3cZuCKG01ObGNt0RsVUb5/jsjkBLgctwnsRGe/auSWInRgU28SFFhYVFnjjXdwxsYAMb2H+wAqfhIslM9mxq2qfak1WSmZsX2MXXFBV2f1rJby9eq0Ad7xOYrQ/wfLja0c90XFsf7LAk1zgLZcJCSpWm78nv98H4Ah/VNHJvtdVZAAAAAElFTkSuQmCC"/>
+  </symbol>
+</svg>
 	<button class="button">Подняться наверх</button>
+	
 </body>
 </html>

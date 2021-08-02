@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
     "jquery": "^3.6.0",
-    "normalize.css": "^8.0.1"
+    "node-sass": "^6.0.1",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.36.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -22,3 +26,4 @@
   },
   "homepage": "https://github.com/SwatOfSky/new_rep#readme"
 }
+"css:compile": "gulp scss"

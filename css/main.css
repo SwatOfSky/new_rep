@@ -2,6 +2,11 @@
 			float: left;
 			margin-left: 10px;
 			margin-top: 10px;
+			z-index: 2;
+			width: 100%;
+		}
+		.logo img{
+			max-width: 100%;
 		}
 		.header__logo {
 			display: flex;
@@ -25,6 +30,7 @@
 			margin-top: 25px;
 			flex-grow: 1;
 			font-size: 110%;
+			min-width: 680px;
 		}
 		.menu ul{
 			display: flex;
@@ -92,7 +98,6 @@
 		}
 		.banner__background {
 			background-color: #cbd4e6;
-			
 		}
 		.banner__info, .banner__number, .banner__input {
 			text-align: right;
@@ -106,6 +111,10 @@
 		.header {
 			background: #43b1d2;
 			margin: auto;
+			z-index: 50;
+		}
+		.header__burger {
+			display: none;
 		}
 		.container, .tabs {
 			max-width: 1200px;
@@ -120,20 +129,121 @@
 			.container {
 				max-width: 850px;
 			}
+			body.lock{
+				overflow: hidden;
+			}
 			.banner__info {
 				width: 35%;
 			}
+			.header__burger {
+				display: block;
+				position: relative;
+				width: 30px;
+				height: 20px;
+				z-index: 4;
+			}
+			.header__burger:before,
+			.header__burger:after {
+				content: '';
+				background-color: #fff;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				transition: all 1s ease 0s;
+
+			}
+			.header__burger:before {
+				top: 0;
+			}
+			.header__burger:after {
+				bottom: 0;
+			}
+			.header__burger span{
+				position: absolute;
+				background-color: #fff;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				top: 9px;
+				transition: all 1s ease 0s;
+			}
+			.menu {
+				position: fixed;
+				top: -150%;
+				left: 0;
+				height: 100%;
+				background-color: #43b1d2;
+				padding: 100px 10px 20px 10px;
+				transition: all 1s ease 0s;
+				width: 100%;
+			}
+			.menu.active{
+				top: 0;
+				transition: all 1s ease 0s;
+			}
+			.menu ul{
+				display: block;
+			}
+			.menu li{
+				margin: 0px 0px 20px 0px;
+			}
+			.header{
+				position: fixed;
+				z-index: 10;
+				width: 100%;
+				background-color: #43b1d2;
+			}
+			.header__burger.active:before{
+				transform: rotate(45deg);
+				top: 9px;
+				transition: all 1s ease 0s;
+			}
+			.header__burger.active:after{
+				transform: rotate(-45deg);
+				bottom: 9px;
+				transition: all 1s ease 0s;
+			}
+			.header__burger.active span{
+				transform: scale(0);
+				transition: all 1s ease 0s;
+		}
+		.sliders {
+			display: none;
 		}
 		@media (max-width: 785px){
+			
+			.table__tr{
+				display: flex;
+				flex-direction: column;
+			}
+			.table__td{
+				display: block;
+			}
+			.banner{
+				background-image: none;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.banner__info {
+				display: flex;
+				align-content: center;
+				flex-direction: row;
+				width: 500px;
+				text-align: left;
+			}
 			.container {
-				max-width: 720px;
+				max-width: 100%;
 			}
 		}
 		@media (max-width: 600px){
+			.container {
+				max-width: 100%;
+			}
 			.banner {
 				display: flex;
 				flex-direction: column;
-				align-items: flex-start;
 				text-align: left;
 			}
 			.banner__info, .banner__number, .banner__input {
@@ -145,7 +255,8 @@
 				display: flex;
 				flex-direction: column;
 			}
-		}
+	}
+}
 		.advantages{
 			display: flex;
 			flex-direction: row;
@@ -272,3 +383,68 @@
 		.all_clinics__button{
 			cursor: pointer;
 		}
+		.arrow__box {
+			background-color: #cbd4e6;
+			height: 25px;
+			width: 30px;
+		}
+		.sliders img{
+			width: 250px;
+		}
+		.sliders {
+			padding: 15px;
+		}
+		.padding15{
+			padding: 15px;
+		}
+		.arrow__end{
+			display: flex;
+			margin-bottom: 10px;
+			justify-content: flex-end;
+		}
+		.sliders__space {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.sliders__background {
+			background-color: #e5e9f2;
+			width: 100%;
+		}
+		.call__background{
+			background-color: #43b1d2;
+		}
+		.call__row{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		.call__button{
+			background-color: #e5e9f2; 
+		}
+		.footer__icon{
+			width: 40px;
+			height: 40px;
+			float: left;
+			margin-right: 15px;
+		}
+		.play_icon{
+			box-sizing: border-box;
+			width: 10px;
+			height: 10px;
+			border-style: solid;
+			border-width: 10px 0px 10px 10px;
+			border-color: transparent transparent transparent #43b1d2;
+			cursor: pointer;
+			padding-right: 10px; 
+		}
+		.footer__button{
+			background-color: #0087be;
+			border-radius: 10%;
+		}
+		.copyright{
+			height: 50px;
+			color: white;
+			display: flex;
+			justify-content: center;
+			}		}
