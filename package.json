@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
     "jquery": "^3.6.0",
@@ -15,7 +14,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css:compile": "gulp scss"
+    "css:compile" : "gulp scss",
+    "css:watch" : "gulp scss:watch"
   },
   "repository": {
     "type": "git",
